@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>spgames</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<display-name>SliderUpload</display-name>
+		<servlet-name>SliderUpload</servlet-name>
+		<servlet-class>spgames.SliderUpload</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SliderUpload</servlet-name>
+		<url-pattern>/SliderUpload</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<display-name>GameProcessor</display-name>
+		<servlet-name>GameProcessor</servlet-name>
+		<servlet-class>spgames.GameProcessor</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GameProcessor</servlet-name>
+		<url-pattern>/GameProcessor</url-pattern>
+	</servlet-mapping>
+	<context-param>
+		<description>Location for slider images</description>
+		<param-name>slider-location</param-name>
+		<param-value>/home/sp_games/images/slider</param-value>
+	</context-param>
+	<context-param>
+		<description>Location for game images</description>
+		<param-name>gameimage-location</param-name>
+		<param-value>/home/sp_games/images/game</param-value>
+	</context-param>
+	<context-param>
+		<description>JDBC URL</description>
+		<param-name>jdbcURL</param-name>
+		<param-value>jdbc:mysql://127.13.160.2:3306/sp_games</param-value>
+	</context-param>
+	<context-param>
+		<description>MySQL User</description>
+		<param-name>mysqlUser</param-name>
+		<param-value>root</param-value>
+	</context-param>
+	<context-param>
+		<description>MySQL Password</description>
+		<param-name>mysqlPassword</param-name>
+		<param-value>toor</param-value>
+	</context-param>
+
+	<error-page>
+		<location>/errorpage.jsp</location>
+	</error-page>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>https</web-resource-name>
+			<url-pattern>/*</url-pattern>
+		</web-resource-collection>
+		<user-data-constraint>
+			<transport-guarantee>CONFIDENTIAL</transport-guarantee>
+		</user-data-constraint>
+	</security-constraint>
+</web-app>

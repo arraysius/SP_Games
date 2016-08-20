@@ -1,0 +1,905 @@
+/*!
+ * Start Bootstrap - Shop Homepage HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+body {
+    padding-top: 70px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: #EEEEEE;
+}
+
+.site_logo {
+    height: 2.5em;
+    width: auto;
+    margin-top: -0.55em;
+}
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control, .item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    color: #d17581;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+/* My Additions */
+#search_field {
+    width: 100%;
+}
+
+#nogamesfound {
+    text-align: center;
+    font-family: "Product Sans";
+    font-size: 2.5em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+#login {
+    font-family: "Product Sans";
+    text-align: center;
+    margin: 5em auto;
+    width: 25em;
+}
+
+#login_legend {
+    font-size: 3em;
+}
+
+.login_input {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.login_input:hover {
+    background-color: aliceblue;
+    transition: all 0.5s ease-in-out;
+}
+
+#login_submit {
+    background-color: #545454;
+    border: 2px solid #ccc;
+    font-weight: bold;
+    font-size: 2em;
+    color: paleturquoise;
+}
+
+#login_submit:hover {
+    color: red;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+#login_error {
+    color: red;
+}
+
+.game_name {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.game_image {
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.subject {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gameInfo {
+    margin-top: 1em;
+}
+
+.desc {
+    font-size: 16px;
+    margin-bottom: -0.1em;
+}
+
+.addToCartForm {
+    float: right;
+    width: 300px;
+    text-align: center;
+}
+
+.addToCartStock {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.addToCartQuantity {
+    text-align: center;
+    border-radius: 15px;
+    font-size: 1.3em;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.addToCart {
+    font-family: "Product Sans", 'Droid Sans', sans-serif;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    /*margin: 40px;*/
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.5),
+    0 0 1px 1px rgba(255, 255, 255, 0.8),
+    0 0 0 6px rgba(0, 0, 0, 0.06),
+    0 0 0 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background: rgb(143, 200, 0);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhmYzgwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2NjhlMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(143, 200, 0, 1) 0%, rgba(102, 142, 0, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(143, 200, 0, 1)), color-stop(100%, rgba(102, 142, 0, 1)));
+    background: -webkit-linear-gradient(top, rgba(143, 200, 0, 1) 0%, rgba(102, 142, 0, 1) 100%);
+    background: -o-linear-gradient(top, rgba(143, 200, 0, 1) 0%, rgba(102, 142, 0, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(143, 200, 0, 1) 0%, rgba(102, 142, 0, 1) 100%);
+    background: linear-gradient(top, rgba(143, 200, 0, 1) 0%, rgba(102, 142, 0, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8fc800', endColorstr='#668e00', GradientType=0);
+}
+
+.addToCartTitle {
+    padding: 10px;
+    float: left;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.2em;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.addToCartPrice {
+    padding: 10px;
+    float: left;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 800;
+    font-size: 1.2em;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.addToCart:hover {
+    background: rgb(102, 142, 0);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2OGUwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4ZmM4MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(102, 142, 0, 1) 0%, rgba(143, 200, 0, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(102, 142, 0, 1)), color-stop(100%, rgba(143, 200, 0, 1)));
+    background: -webkit-linear-gradient(top, rgba(102, 142, 0, 1) 0%, rgba(143, 200, 0, 1) 100%);
+    background: -o-linear-gradient(top, rgba(102, 142, 0, 1) 0%, rgba(143, 200, 0, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(102, 142, 0, 1) 0%, rgba(143, 200, 0, 1) 100%);
+    background: linear-gradient(top, rgba(102, 142, 0, 1) 0%, rgba(143, 200, 0, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#668e00', endColorstr='#8fc800', GradientType=0);
+}
+
+.gameline {
+    border-color: #d17581;
+}
+
+hr {
+    border-color: darkgrey;
+}
+
+#review {
+    font-size: 2em;
+    font-weight: bold;
+    color: #d17581;
+}
+
+.review_input {
+    font-size: 16px;
+    margin-bottom: 0.25em;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.review_input:hover, .review_input:focus {
+    background-color: aliceblue;
+    transition: all 0.5s ease-in-out;
+}
+
+#comment_length {
+    width: 50%;
+    height: 10em;
+}
+
+#review_submit {
+    background-color: #545454;
+    border: 2px solid #ccc;
+    font-weight: bold;
+    color: paleturquoise;
+}
+
+#review_submit:hover, #review_submit:active {
+    color: red;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.reviewstar {
+    color: #d17581;
+}
+
+#review_game {
+    font-family: "Product Sans";
+    font-size: 1.5em;
+}
+
+#review_star {
+    font-size: 1.5em;
+}
+
+.reviewsubmitted {
+    background-color: #dadada;
+    font-size: 20px;
+    font-family: "Product Sans";
+    width: 100%;
+    border: grey solid 2px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.reviewcontent {
+    font-size: 16px;
+    text-align: justify;
+}
+
+#review_form {
+    font-family: "Product Sans";
+    font-size: 18px;
+    margin-bottom: 2em;
+}
+
+#review_submitted_star {
+    color: #d17581;
+}
+
+.adminwelcbox {
+    margin-bottom: 15px;
+}
+
+.adminmsg {
+    margin: 0;
+    font-size: 25px;
+    color: #d17581;
+    font-weight: bolder;
+    line-height: 1.4;
+}
+
+.admincpanelbtn {
+    height: 10em;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.cpanelbtn {
+    padding: 1em;
+    margin-top: 2.5em;
+    font-family: "Product Sans";
+    font-size: 16px;
+}
+
+#editgameform {
+    padding: 0.5em;
+    font-family: "Product Sans";
+    font-size: 16px;
+}
+
+#editgameform input {
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.admindatabase {
+    font-family: "Product Sans"
+}
+
+#admdbtbstyle {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+}
+
+#admdbtbstyle, #admdbtbstyle tr, #admdbtbstyle td {
+    border: 1px solid #ddd;
+}
+
+#admdbtbstyle tr, #admdbtbstyle td {
+    padding: 5px;
+}
+
+.admno {
+    width: 2.5em;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #bbb;
+}
+
+.admname {
+    max-width: 12em;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #bbb;
+}
+
+.admmgname {
+    width: 15em;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #bbb;
+}
+
+#admdate {
+    max-width: 7em;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #bbb;
+}
+
+#admgenre {
+    max-width: 15em;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #bbb;
+}
+
+#admact {
+    max-width: 7em;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #bbb;
+}
+
+#admemail {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #bbb;
+}
+
+#admrname {
+    width: 5em;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #bbb;
+}
+
+#admreview {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #bbb;
+}
+
+#admrdate {
+    width: 9em;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #bbb;
+}
+
+#admdel {
+    max-width: 3em;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #bbb;
+}
+
+#admmanageact {
+    text-align: center;
+    max-width: 7em;
+    font-size: 16px;
+}
+
+#admmanagedel {
+    text-align: center;
+    font-size: 16px;
+}
+
+#admgact {
+    width: 20em;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #bbb;
+}
+
+#admmgact {
+    width: 7em;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #bbb;
+}
+
+.admgupdate {
+    float: left;
+}
+
+.admgdelete {
+    float: right;
+}
+
+#manageadd {
+    margin-bottom: 10px;
+    font-family: "Product Sans"
+}
+
+.admnamecon {
+    max-width: 13em;
+    word-wrap: break-word;
+}
+
+.admrnamecon {
+    max-width: 10em;
+    word-wrap: break-word;
+}
+
+.admreviewcon {
+    max-width: 20em;
+    word-wrap: break-word;
+}
+
+.admslider {
+    margin-top: 10px;
+}
+
+.slidereditbtn {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.addadmin {
+    margin-bottom: 0.3em;
+}
+
+#row2 {
+    margin-top: 5px;
+}
+
+#mysettings td {
+    padding: 0.3em;
+}
+
+#noteforgetbox {
+    margin-top: 7em;
+    margin-left: 20em;
+    margin-right: 20em;
+    margin-bottom: 6em;
+}
+
+#noteforgettitle {
+    text-align: center;
+}
+
+#noteforgetdesc {
+    text-align: justify;
+}
+
+.dropdown {
+    width: 15em;
+    background-color: white;
+}
+
+.selectBox {
+    position: relative;
+    width: 100%;
+}
+
+#checkboxes {
+    display: none;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    border-bottom: 1px black solid;
+}
+
+#checkboxes label {
+    display: block;
+}
+
+#checkboxes label:hover {
+    background-color: #ddd;
+}
+
+#error_message {
+    font-family: "Product Sans";
+}
+
+#errortitle {
+    text-align: center;
+    font-family: "Product Sans";
+    font-size: 8em;
+    color: red;
+}
+
+.errorcontent {
+    text-align: justify;
+    font-size: 2em;
+    line-height: 1.5em;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#errorthankyou {
+    text-align: center;
+}
+
+/*Assignment 2*/
+
+#registerForm {
+    font-family: "Product Sans";
+    text-align: center;
+    margin: 5em auto;
+    width: 28em;
+}
+
+#registerStatus {
+    color: red;
+}
+
+#registerForm legend {
+    margin-top: 2em;
+}
+
+.registerInput {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.registerInput:hover {
+    background-color: aliceblue;
+    transition: all 0.5s ease-in-out;
+}
+
+#registerSubmit {
+    background-color: #545454;
+    border: 2px solid #ccc;
+    font-weight: bold;
+    font-size: 2em;
+    color: paleturquoise;
+    margin-top: 1em;
+}
+
+#registerSubmit:hover {
+    color: red;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.cartTitle {
+    color: #d17581;
+    text-align: center;
+}
+
+#cartErrorMessage {
+    text-align: center;
+    color: red;
+}
+
+#cartTable {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#cartTable th {
+    text-align: center;
+    font-size: 20px;
+    background-color: #75d197;
+}
+
+#cartTable td {
+    font-size: 18px;
+}
+
+#cartTable th, #cartTable td {
+    padding: 10px;
+}
+
+.cartUpdateIcon {
+    vertical-align: middle;
+}
+
+.cartEmpty {
+    text-align: center;
+}
+
+.cartUpdateIcon:hover {
+    transition: 200ms linear all;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(3px, 0);
+    }
+    50% {
+        transform: translate(-3px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@-moz-keyframes shake {
+    0% {
+        -moz-transform: translate(3px, 0);
+    }
+    50% {
+        -moz-transform: translate(-3px, 0);
+    }
+    100% {
+        -moz-transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes shake {
+    0% {
+        -webkit-transform: translate(3px, 0);
+    }
+    50% {
+        -webkit-transform: translate(-3px, 0);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+@-ms-keyframes shake {
+    0% {
+        -ms-transform: translate(3px, 0);
+    }
+    50% {
+        -ms-transform: translate(-3px, 0);
+    }
+    100% {
+        -ms-transform: translate(0, 0);
+    }
+}
+
+@-o-keyframes shake {
+    0% {
+        -o-transform: translate(3px, 0);
+    }
+    50% {
+        -o-transform: translate(-3px, 0);
+    }
+    100% {
+        -o-transform: translate(0, 0);
+    }
+}
+
+.shake:hover {
+    animation: shake 150ms 2 linear;
+    -moz-animation: shake 150ms 2 linear;
+    -webkit-animation: shake 150ms 2 linear;
+    -o-animation: shake 150ms 2 linear;
+}
+
+.cartColumn {
+    width: 115px;
+    text-align: center;
+}
+
+.cartUpdateColumn {
+    width: 140px;
+    text-align: center;
+}
+
+.cartUpdateColumn input {
+    text-align: center;
+}
+
+.cartUpdateInput {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.cartUpdateInput:focus {
+    background-color: lightyellow;
+}
+
+#cartProfile {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+}
+
+#cartProfile td {
+    padding: 5px 10px;
+}
+
+#cartTotalPrice {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.gameHistory {
+    font-family: "Product Sans";
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.gameHistory tr td {
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    border: 1px solid #ddd;
+}
+
+.gameHistoryHeader {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.transactionHeader {
+    width: 100%;
+    background-color: #aaa;
+}
+
+.gameTitle {
+    width: 28em;
+    background-color: #fff;
+}
+
+.price {
+    width: 5em;
+    background-color: #fff;
+}
+
+.transactionQuantity {
+    width: 5em;
+    background-color: #fff;
+}
+
+#profile {
+    font-family: "Product Sans";
+    font-size: 20px;
+    margin-left: 2em;
+}
+
+#profile td {
+    padding: 5px 10px;
+}
+
+.profileTitle {
+    font-weight: bolder;
+}
+
+#addressTitle {
+    vertical-align: top;
+}
+
+.sectionTitle {
+    font-size: 22px;
+    font-weight: bolder;
+    color: #d17581
+}
+
+.welcbox {
+    margin-left: -1.2em;
+    margin-bottom: 15px;
+}
+
+.msg {
+    margin: 0;
+    font-size: 30px;
+    color: #d17581;
+    font-weight: bolder;
+    line-height: 1.4;
+}
+
+#updateProfileForm {
+    font-family: "Product Sans";
+    text-align: center;
+    margin: 5em auto;
+    width: 28em;
+    font-size: 1.2em;
+}
+
+#updateStatus {
+    color: red;
+}
+
+#updateProfileForm legend {
+    margin-top: 2em;
+}
+
+.updateInput {
+    font-size: 1.5em;
+    margin-top: 0.2em;
+    margin-bottom: 0.6em;
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.updateInput:hover {
+    background-color: aliceblue;
+    transition: all 0.5s ease-in-out;
+}
+
+#updateSubmit {
+    background-color: #545454;
+    border: 2px solid #ccc;
+    font-weight: bold;
+    font-size: 2em;
+    color: paleturquoise;
+    margin-top: 1em;
+}
+
+#updateSubmit:hover {
+    color: red;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.admqty {
+    background-color: #bbb;
+    font-weight: bold;
+    font-size: 16px;
+    width: 18em;
+}
+
+.admqtygname {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #bbb;
+}
+
+.stockQty {
+    text-align: center;
+}
